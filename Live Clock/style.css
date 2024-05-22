@@ -1,0 +1,73 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space between header and footer */
+    align-items: center; /* Center content horizontally */
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    flex: 0 0 auto; /* Prevent header from growing/shrinking */
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    flex: 0 0 auto; /* Prevent footer from growing/shrinking */
+}
+
+.clock-container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border: 2px solid #000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1 0 auto; /* Allow main to grow and shrink */
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 500px; /* Optional max-width for the container */
+}
+
+#clock-display {
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+
+#city-name {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+form label, form input, form button {
+    margin: 5px 0;
+}
